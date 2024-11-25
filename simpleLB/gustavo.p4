@@ -111,15 +111,15 @@ control SwitchIngress(
 
     /*TODO: create register action*/
     RegisterAction<bit<32>, _, bit<32>>(lb_counter) check_counter = {
-        void apply(inout bit<32> value, out bit<32> rv) {
-            if(value == 1) {
+    void apply(inout bit<32> value, out bit<32> rv) {
+            if(value == 1){
                 value = 0;
-            } else {
+            }else{
                 value = 1;
             }
-        rv = value;
+	    rv = value;
         }
-    }
+    };
 
     table ipv4_lpm {
         key = {

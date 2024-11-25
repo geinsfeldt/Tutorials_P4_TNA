@@ -1,4 +1,4 @@
-table1 = bfrt.ipv4.pipe.SwitchIngress.ipv4_lpm
+table1 = bfrt.gustavo.pipe.SwitchIngress.ipv4_lpm
 entry = table1.add_with_ipv4_forward("10.0.1.1", 132, "94:6d:ae:5c:87:72")
 
 entry = table1.add_with_ipv4_forward("10.0.1.2", 164 , "94:6d:ae:5c:87:42")
